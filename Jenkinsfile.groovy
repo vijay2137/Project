@@ -1,8 +1,8 @@
 pipeline{
     agent jenkins{
         stage{
-            step{
-                echo "Executing Build Step"
+            step scm {
+                sh echo "Executing Build Step"
             }
         }
     }
